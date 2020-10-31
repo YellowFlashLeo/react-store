@@ -37,6 +37,7 @@ export default class Product extends Component {
                   disabled={inCart ? true : false}
                   onClick={() => {
                     provider.addToCart(id);
+                    provider.openModel(id);
                   }}
                 >
                   {inCart ? (

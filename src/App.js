@@ -5,7 +5,8 @@ import Navbar from "./components/Navbar";
 import Details from "./components/Details";
 import ProductList from "./components/ProductList";
 import Default from "./components/Default";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
+import Model from "./components/Model";
 import "./App.css";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/cart" component={Cart}></Route>
           <Route component={Default}></Route>
         </Switch>
+        <Model />
       </React.Fragment>
     );
   }
